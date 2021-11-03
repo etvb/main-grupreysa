@@ -5,6 +5,7 @@
     padding: 0;
     box-sizing: border-box;
 }
+
 body {
     font-family: 'Roboto', sans-serif;
     background-color: rgb(24, 69, 153);
@@ -62,8 +63,22 @@ body {
     /* z-index: 2; */
     text-align: center;
     padding-top: 30px
-
 }
+.close {
+    display: block;
+    right: 10px;
+    color: white;
+    font-weight: 900;
+    font-size: 30px;
+    position: absolute;
+    top: 15px;
+    z-index: 3;
+    cursor: pointer;
+}
+.open {
+    left: 0;
+}
+
 .nav-info-left ul {
 }
 
@@ -91,7 +106,7 @@ body {
         background-color: rgba(255,255,255, .15);
         backdrop-filter: blur(5px);
     }
-    .hamburger {
+    .hamburger, .close {
         display: none;
     }
     .nav-info-left {
