@@ -106,7 +106,7 @@ body {
     padding-top: 60px;
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
+    justify-content: center;
     height: 100vh;
 }
 .header-title {
@@ -119,12 +119,15 @@ body {
     grid-template-columns: repeat(6, 1fr);
     grid-template-rows: repeat(3, 1fr);
     /* margin: 0 50px; */
+    z-index: -1;
 }
 
 .grid a:nth-child(1){
     grid-column: 3/5;
     grid-row: 1/3;
     justify-self: center;
+    /* animation: pulse 2s infinite; */
+    border-radius: 50%;
 }
 
 .grid a:nth-child(2){
@@ -133,6 +136,7 @@ body {
     justify-self: center;
     width: 40%;
 }
+
 
 .grid a:nth-child(3){
     grid-column: 2/3;
@@ -171,6 +175,29 @@ body {
 }
 
 
+   @keyframes pulse{
+    0%{
+      /* //La escala nos dará el efecto de desvanecimiento intermitente */
+      transform:scale(.9);
+      /* //El box shadow es el color que se desvanece con opacidad menor al color */
+      box-shadow: 0 0 0 0 rgba(37, 6, 212, 0.7)
+    }
+    70%{
+      /* //hacemos la escala más grande & luego la restauramos a su valor inicial */
+      /* transform:scale(1); */
+     /* //quitaremos el color de la sombra */
+      box-shadow: 0 0 0 10px rgba(247, 159, 121, 0)
+      
+    }
+    100%{
+      transform:scale(.9);  
+    }
+  
+  }
+  
+
+
+
 
 
 .raw {
@@ -189,10 +216,12 @@ body {
 } */
 .container-image  img {
     width: 100%;
-    box-shadow: 0 3px 1px -2px rgba(0, 0, 0, 0.2),
+    /* box-shadow: 0 3px 1px -2px rgba(0, 0, 0, 0.2),
     0 2px 2px 0 rgba(0, 0, 0, 0.14),
-    0 1px 5px 0 rgba(0, 0, 0, 0.12);
+    0 1px 5px 0 rgba(0, 0, 0, 0.12); */
     border-radius: 50%;
+    animation: pulse 2s infinite;
+    
 }
 
 @media(min-width: 768px) {
