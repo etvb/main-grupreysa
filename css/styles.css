@@ -117,12 +117,36 @@ body {
     text-align: center;
     margin-bottom: 20px;
 }
-.grid {
+/* .grid {
     display: grid;
     grid-template-columns: repeat(6, 1fr);
     grid-template-rows: repeat(3, 1fr);
-    /* margin: 0 50px; */
+     margin: 0 50px;
     z-index: -1;
+} */
+
+.header-mainImage {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 73vh;
+    position: relative;
+}
+
+.header-mainImage li {
+    position:absolute;
+    list-style: none;
+    transform: rotate(calc(360deg / 6 * var(--i))) translatex(135px);
+    /* transform-origin: 100px; */
+    /* left: 10px; */
+    width: 100px;
+}
+
+.header-mainImage li a img {
+    width: 100%;
+    border-radius: 50%;
+    /* transform: rotate(calc(360deg / -6 * var(--i))); */
+    animation: pulse 2s infinite; 
 }
 
 .grid a:nth-child(1){
@@ -268,7 +292,7 @@ body {
    @keyframes pulse{
     0%{
       /* //La escala nos dará el efecto de desvanecimiento intermitente */
-      transform:scale(.9);
+      transform:scale(.9) rotate(calc(360deg / -6 * var(--i)));
       /* //El box shadow es el color que se desvanece con opacidad menor al color */
       box-shadow: 0 0 0 0 rgba(37, 6, 212, 0.7)
     }
@@ -280,7 +304,7 @@ body {
       
     }
     100%{
-      transform:scale(.9);  
+      transform:scale(.9) rotate(calc(360deg / -6 * var(--i)));  
     }
   
   }
@@ -304,15 +328,14 @@ body {
 .container-image {
     width: 25%;
 } */
-.container-image  img {
+/*.container-image2  img {
     width: 100%;
-    /* box-shadow: 0 3px 1px -2px rgba(0, 0, 0, 0.2),
+    box-shadow: 0 3px 1px -2px rgba(0, 0, 0, 0.2),
     0 2px 2px 0 rgba(0, 0, 0, 0.14),
-    0 1px 5px 0 rgba(0, 0, 0, 0.12); */
-    border-radius: 50%;
-    animation: pulse 2s infinite;
-    
-}
+    0 1px 5px 0 rgba(0, 0, 0, 0.12);
+}*/
+
+
 
 @media(min-width: 768px) {
 
@@ -339,7 +362,7 @@ body {
 /* header */
 
     .header-title{
-        font-size: 3rem;
+        font-size: 2.8rem;
     }
 
     .grid {
@@ -351,17 +374,27 @@ body {
         width: 80%;
     }
 
-    .container-image.main {
+    /* .container-image.main {
         max-width: 500px;
     }
 
     .container-image {
         max-width: 250px;
+    } */
+
+
+    .header-mainImage li {
+        
+        transform: rotate(calc(360deg / 6 * var(--i))) translatex(200px);
+        width: 130px;
     }
-
-    .container-image  img {
-        animation: pulse2 2s infinite;
-
+    
+    .header-mainImage li a img {
+        width: 100%;
+        
+        border-radius: 50%;
+        /* transform: rotate(calc(360deg / -6 * var(--i))); */
+        animation: pulse2 2s infinite; 
     }
 
     /* NUMEROS */
@@ -429,7 +462,7 @@ body {
 @keyframes pulse2{
     0%{
       /* //La escala nos dará el efecto de desvanecimiento intermitente */
-      transform:scale(.9);
+      transform:scale(.9) rotate(calc(360deg / -6 * var(--i)));
       /* //El box shadow es el color que se desvanece con opacidad menor al color */
       box-shadow: 0 0 0 0 rgba(37, 6, 212, 0.7)
     }
@@ -441,7 +474,7 @@ body {
       
     }
     100%{
-      transform:scale(.9);  
+      transform:scale(.9) rotate(calc(360deg / -6 * var(--i)));  
     }
   
   }
