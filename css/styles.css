@@ -93,7 +93,7 @@ body {
 
 .nav-info-left a {
     text-decoration: none;
-    color: white;
+    color: #000;
     font-size: 18px;
     /* font-weight: 900; */
 }
@@ -285,12 +285,6 @@ body {
     margin: 15px 0;
 }
 
-
-
-
-
-
-
    @keyframes pulse{
     0%{
       /* //La escala nos dará el efecto de desvanecimiento intermitente */
@@ -313,11 +307,19 @@ body {
 
   /* principios__article */
 
+  .principios__article {
+    margin-top: 32px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
   .card-110822 {
     position: relative;
     width: 350px;
     height: 85px;
-    background: #398cc0;
+    background: #17056B;
     border-radius: 20px;
     filter: drop-shadow(-20px 20px 40px #398cc055);
     transition: .5s ease-in-out;
@@ -336,7 +338,7 @@ body {
     transform: translateX(-50%);
     width: 70px;
     height: 60px;
-    background-color: #398cc0;
+    background-color: #17056B;
     border-bottom-left-radius: 35px;
     border-bottom-right-radius: 35px;
     cursor: pointer;
@@ -350,7 +352,7 @@ body {
     width: 35px;
     height: 35px;
     border-top-right-radius: 35px;
-    box-shadow: 11px -10px 0 10px #398cc0;
+    box-shadow: 11px -10px 0 10px #17056B;
 }
 
 .toggle-110822::after {
@@ -361,7 +363,7 @@ body {
     width: 35px;
     height: 35px;
     border-top-left-radius: 35px;
-    box-shadow: -11px -10px 0 10px #398cc0;
+    box-shadow: -11px -10px 0 10px #17056B;
 }
 
 .toggle-110822 span {
@@ -410,7 +412,7 @@ body {
 
 .contentBox-110822 .content-110822 .pbx-110822 {
     margin-top: 30px;
-    width: 250px;
+    width: 300px;
     height: 250px;
     background-color: #fff;
     /* margin-top: 30px; */
@@ -420,9 +422,13 @@ body {
     align-items: center;
 }
 
-.contentBox-110822 .content-110822 .pbx-110822 p {
+.contentBox-110822 .content-110822 .pbx-110822 p,
+.contentBox-110822 .content-110822 .pbx-110822 ul li {
     text-align: justify;
     margin: 0 10px;
+    font-size: 1.3rem;
+    font-weight: bold;
+    line-height: 33px;
 }
 
 
@@ -540,7 +546,7 @@ body {
 
     .nosotros {
         display: grid;
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(1, 1fr);
         grid-template-rows: 1, repeat(3,auto);
         background-color:azure;
         padding: 50px 30px;
@@ -582,12 +588,6 @@ body {
         margin-right: 15px;
     }
 
-  
-    
-
-
-   
-
 
 @keyframes pulse2{
     0%{
@@ -607,8 +607,20 @@ body {
       transform:scale(.9) rotate(calc(360deg / -6 * var(--i)));  
     }
   
-  }
+}
 
+/* principios__article */
+
+.principios__article {
+    width: 100%;
+    /* border: 1px solid red; */
+    margin-top: 32px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
 
 
 
