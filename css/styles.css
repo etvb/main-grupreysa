@@ -248,6 +248,7 @@ body {
     justify-self: center;
     text-shadow: 0px 5px 12px black;
     margin-bottom: 15px;
+    font-size: 2rem;
 }
 .nosotros__h3 {
     text-align: center;
@@ -450,7 +451,7 @@ body {
     padding: 16px;
     display: flex;
     flex-direction: column;
-    /* width: 30%; */
+    width: 250px;
     justify-content: center;
     align-items: center;
     background-color: azure;
@@ -467,6 +468,35 @@ body {
     font-size: 32px;
     text-align: center;
   }
+
+  /* CONTACTO */
+
+  .contacto {
+    display: flex;
+    flex-direction: column;
+    background-color:azure;
+    padding: 50px 30px;
+    border: 1px solid red;
+    text-align: center;
+}
+
+.contacto h2 {
+   
+    text-shadow: 0px 5px 12px black;
+    margin-bottom: 15px;
+    font-size: 2rem;
+}
+
+.contenedor-info-contacto {
+    line-height: 35px;
+    font-size: 20px;
+}
+
+.contacto-contenedormap {
+    margin-top: 28px;
+    height: 250px;
+    /* display: none; */
+}
 
   
 
@@ -625,8 +655,6 @@ body {
   }
 
     /* masNosotros */
-
-   
     
       .card {
         padding: 16px;
@@ -638,8 +666,17 @@ body {
         background-color: azure;
         margin: 8px;
       }
+/* contacto */
 
 
+.contacto-contenedormap {
+    height: 400px;
+    /* width: 600px; */
+}
+
+.contacto-contenedorinfo {
+    display: none;
+}
 
 }
 
