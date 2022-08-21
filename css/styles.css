@@ -113,11 +113,19 @@ body {
     overflow: hidden;
     padding-bottom: 50px;
 }
+
 .header-title {
-    font-size: 1.5rem;
+    font-size: 3rem;
     text-align: center;
     margin-bottom: 20px;
     color: azure;
+}
+
+.header-subtitle {
+    color: azure;
+    text-align: center;
+    margin: 0 20px 0 20px;
+    
 }
 /* .grid {
     display: grid;
@@ -131,7 +139,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 73vh;
+    min-height: 60vh;
     position: relative;
 }
 
@@ -549,6 +557,10 @@ body {
     .container-image {
         max-width: 250px;
     } */
+
+    .header-mainImage {
+        min-height: 73vh;
+    }
 
 
     .header-mainImage li {
