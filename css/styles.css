@@ -93,9 +93,10 @@ body {
 
 .nav-info-left a {
     text-decoration: none;
-    color: #000;
+    color: azure;
     font-size: 18px;
-    /* font-weight: 900; */
+    font-weight: bold;
+    text-shadow: 1px 1px black;
 }
 
 .nav-info-left a:hover {
@@ -486,7 +487,7 @@ body {
     flex-direction: column;
     background-color:azure;
     padding: 50px 30px;
-    border: 1px solid red;
+    /* border: 1px solid red; */
     text-align: center;
 }
 
