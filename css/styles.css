@@ -250,7 +250,7 @@ body {
     grid-template-columns: 1fr;
     grid-template-rows: repeat(8,auto);
     background-color:azure;
-    padding: 50px 30px;
+    padding: 50px 16px;
 }
 
 .nosotros__h2 {
