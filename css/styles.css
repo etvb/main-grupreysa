@@ -517,7 +517,18 @@ footer {
     color: azure;
 }
   
+.btn-flotante {
+    width: 40px;
+    display: block;
+    position: fixed;
+    bottom: 94px;
+    right: 10px;
+    z-index: 999999999;
+}
 
+.btn-flotante img {
+    width: 100%; 
+}
 
 
 
@@ -711,5 +722,7 @@ footer {
 }
 
 }
+
+
 
 
